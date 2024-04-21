@@ -1,3 +1,12 @@
+# This is a fork of the original repo, that has been modified to run on Xilinx Vivado.
+There are also several fixes, including:
+- Fixed control unit, which lacked sign-extending for immediates in several places, and also had a typo in the decoding of the branch instructions
+- Fixed the data memory controller, which was decoding the data format (Word, Byte, Halfword etc.) incorrectly
+- The core was skipping the instruction immediately following a branch/jump, so I added a -4 offset to the Jump Target Unit
+
+The readme for the original repo is below:
+
+ 
 # Maestro
 This repository contains a 5 stage pipeline implementation of the RV32I ISA strongly inspired by [David Patterson's and John Hennessy's Computer Organization and Design RISC-V Edition.](https://www.amazon.com/dp/0128122757) The project is entirely academic, it was delevoped at Rio Grande do Norte's Federal University in Brazil and it does not aim to be competitive against complex implementations. The rationale behind it was basically learning about RISC-V, the ISA, and processor design in general. If you want to deploy a RISC-V core, [I strongly recommend using a fully-featured and tested core instead.](https://github.com/riscv/riscv-wiki/wiki/RISC-V-Cores-and-SoCs)  
 
