@@ -14,5 +14,6 @@ begin
 	with selection select
 		output_0 <=
 		input_0 when '0',
-		input_1 when '1';
+		input_1 when '1',
+		X"00000000" when others;
 end behavioral;

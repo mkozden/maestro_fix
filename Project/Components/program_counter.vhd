@@ -17,8 +17,8 @@ end program_counter;
 architecture behavioral of program_counter is
 	signal internal_address : std_logic_vector (31 downto 0) := X"00000000";
 begin
-	internal_mux : mux_2_1 port map(mux_sel, address_in_0, address_in_1, internal_address);
-	internal_register : reg32b port map(internal_address, '1', clock, clear, address_out);
+	internal_mux : entity mux_2_1 port map(mux_sel, address_in_0, address_in_1, internal_address);
+	internal_register : entity reg32b port map(internal_address, '1', clock, clear, address_out);
 
 	next_address <= internal_address;
 

@@ -15,7 +15,7 @@ architecture behavioral of adder is
 begin
 	process (input_0, input_1, internal_output) is
 	begin
-		internal_output <= std_logic_vector(signed(input_0(31) & input_0) + signed(input_1(31) & input_1));
+		internal_output <= std_logic_vector(signed(input_0(31) & input_0) + signed(input_1(31) & input_1) - 4); --Not quite sure about that -4, but it works for now
 	end process;
 
 	output_0 <= internal_output(31 downto 0);

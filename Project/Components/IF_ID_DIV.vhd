@@ -38,8 +38,8 @@ begin
 	--INTERNAL REGISTERS
 
 	--Data
-	instruction_address_reg : reg32b port map(instruction_address_input_signal, '1', clock, clear, instruction_address_output_signal);
-	instruction_data_reg : reg32b port map(instruction_data_input_signal, '1', clock, clear, instruction_data_output_signal);
+	instruction_address_reg : entity reg32b port map(instruction_address_input_signal, '1', clock, clear, instruction_address_output_signal);
+	instruction_data_reg : entity reg32b port map(instruction_data_input_signal, '1', clock, clear, instruction_data_output_signal);
 
 	--WIRING OUTPUT PORTS
 

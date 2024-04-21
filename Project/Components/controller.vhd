@@ -141,6 +141,7 @@ begin
 										when others =>
 											decoded_opcode <= INVALID;
 									end case;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when "001" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -156,6 +157,7 @@ begin
 								when "11" => --JALR
 									decoded_cluster <= JALR;
 									decoded_opcode <= JALR;
+								when others => decoded_opcode <=INVALID;
 							end case;
 						when "010" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -171,6 +173,7 @@ begin
 								when "11" => --Reserved
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when "011" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -186,6 +189,7 @@ begin
 								when "11" => --JAL
 									decoded_cluster <= JAL;
 									decoded_opcode <= JAL;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when "100" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -212,6 +216,7 @@ begin
 													decoded_opcode <= SRLI;
 												when '1' => --Shift right arithmetic immediate
 													decoded_opcode <= SRAI;
+												when others => decoded_opcode <= INVALID;
 											end case;
 										when others =>
 											decoded_opcode <= INVALID;
@@ -225,6 +230,7 @@ begin
 													decoded_opcode <= ADD;
 												when '1' => --Sub
 													decoded_opcode <= SUB;
+												when others => decoded_opcode <= INVALID;
 											end case;
 										when "001" => --Shift left logical
 											decoded_opcode <= inst_SLL;
@@ -240,11 +246,13 @@ begin
 													decoded_opcode <= inst_SRL;
 												when '1' => --Shift right arithmetic
 													decoded_opcode <= inst_SRA;
+												when others => decoded_opcode <= INVALID;
 											end case;
 										when "110" => --OR
 											decoded_opcode <= inst_OR;
 										when "111" => --AND
 											decoded_opcode <= inst_AND;
+										when others => decoded_opcode <= INVALID;
 									end case;
 								when "10" => --OP-FP
 									decoded_cluster <= INVALID;
@@ -252,6 +260,7 @@ begin
 								when "11" => --SYSTEM
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when "101" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -267,6 +276,7 @@ begin
 								when "11" => --Reserved
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when "110" =>
 							case (fetched_instruction(6 downto 5)) is
@@ -282,6 +292,7 @@ begin
 								when "11" => --rv128
 									decoded_cluster <= INVALID;
 									decoded_opcode <= INVALID;
+								when others => decoded_opcode <= INVALID;
 							end case;
 						when others =>
 					end case;
@@ -310,7 +321,8 @@ begin
 						internal_reg_file_read_address_1 <= "00000";
 						internal_reg_file_write <= '1'; --regfile is only lodaded on write_back
 						internal_reg_file_write_address <= fetched_instruction(11 downto 7);
-						internal_immediate <= std_logic_vector("00000000000000000000" & fetched_instruction(31 downto 20));
+						--internal_immediate <= std_logic_vector("00000000000000000000" & fetched_instruction(31 downto 20));
+						internal_immediate <= std_logic_vector(shift_right(signed(fetched_instruction(31 downto 20) & "00000000000000000000"),20));
 						internal_ALU_operation <= "0000";
 						internal_ALU_branch <= '0';
 						internal_ALU_branch_control <= "000"; --BEQ, BNE, BLT, BGE, BLTU, BGEU 
@@ -327,7 +339,8 @@ begin
 						internal_reg_file_read_address_1 <= fetched_instruction(24 downto 20);
 						internal_reg_file_write <= '0';
 						internal_reg_file_write_address <= fetched_instruction(11 downto 7);
-						internal_immediate <= std_logic_vector("00000000000000000000" & fetched_instruction(31 downto 25) & fetched_instruction(11 downto 7));
+						--internal_immediate <= std_logic_vector("00000000000000000000" & fetched_instruction(31 downto 25) & fetched_instruction(11 downto 7));
+						internal_immediate <= std_logic_vector(shift_right(signed(fetched_instruction(31 downto 25) & fetched_instruction(11 downto 7) & "00000000000000000000"),20));
 						internal_ALU_operation <= "0000";
 						internal_ALU_branch <= '0';
 						internal_ALU_branch_control <= "000"; --BEQ, BNE, BLT, BGE, BLTU, BGEU 
@@ -344,7 +357,7 @@ begin
 						internal_reg_file_read_address_1 <= fetched_instruction(24 downto 20);
 						internal_reg_file_write <= '0';
 						internal_reg_file_write_address <= fetched_instruction(11 downto 7);
-						internal_immediate <= std_logic_vector("00000000000000000" & fetched_instruction(31) & fetched_instruction(7) & fetched_instruction(30 downto 25) & fetched_instruction(11 downto 6) & '0');
+						internal_immediate <= std_logic_vector(shift_right(signed(fetched_instruction(31) & fetched_instruction(7) & fetched_instruction(30 downto 25) & fetched_instruction(11 downto 8) & "00000000000000000000"),19)); --sign extending the 12-bit immediate, but with LSB 0
 						internal_ALU_operation <= "0000";
 						internal_ALU_branch <= '1';
 						internal_ALU_branch_control <= std_logic_vector(fetched_instruction(14 downto 12)); --BEQ, BNE, BLT, BGE, BLTU, BGEU 
