@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="microcontroller_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="microcontroller" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,540.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,912.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,850.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="229"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="105" />
+   <wvobject fp_name="/microcontroller/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/progmem_module_0/byte_address" type="array">
+      <obj_property name="ElementShortName">byte_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/progmem_module_0/memory_address" type="array">
+      <obj_property name="ElementShortName">memory_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/progmem_module_0/output_data" type="array">
+      <obj_property name="ElementShortName">output_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/controller_0/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/controller_0/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_instruction" type="array">
+      <obj_property name="ElementShortName">debug_instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/controller_0/decoded_cluster" type="other">
+      <obj_property name="ElementShortName">decoded_cluster</obj_property>
+      <obj_property name="ObjectShortName">decoded_cluster</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/controller_0/decoded_opcode" type="other">
+      <obj_property name="ElementShortName">decoded_opcode</obj_property>
+      <obj_property name="ObjectShortName">decoded_opcode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/instruction_address_IF_ID" type="array">
+      <obj_property name="ElementShortName">instruction_address_IF_ID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_address_IF_ID[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/instruction_address_ID_EX" type="array">
+      <obj_property name="ElementShortName">instruction_address_ID_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_address_ID_EX[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/instruction_address_EX_MEM" type="array">
+      <obj_property name="ElementShortName">instruction_address_EX_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_address_EX_MEM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/instruction_address_MEM_WB" type="array">
+      <obj_property name="ElementShortName">instruction_address_MEM_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_address_MEM_WB[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_pc_output" type="array">
+      <obj_property name="ElementShortName">debug_pc_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_pc_output[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/JTU_0/current_instruction_address" type="array">
+      <obj_property name="ElementShortName">current_instruction_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_instruction_address[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/JTU_0/target_address" type="array">
+      <obj_property name="ElementShortName">target_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">target_address[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_immediate" type="array">
+      <obj_property name="ElementShortName">debug_immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_immediate[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/ALU_0/ALU_branch_response" type="logic">
+      <obj_property name="ElementShortName">ALU_branch_response</obj_property>
+      <obj_property name="ObjectShortName">ALU_branch_response</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/ALU_branch_control" type="array">
+      <obj_property name="ElementShortName">ALU_branch_control[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_branch_control[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/jump_flag" type="logic">
+      <obj_property name="ElementShortName">jump_flag</obj_property>
+      <obj_property name="ObjectShortName">jump_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/jump_flag_ID_EX" type="logic">
+      <obj_property name="ElementShortName">jump_flag_ID_EX</obj_property>
+      <obj_property name="ObjectShortName">jump_flag_ID_EX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/jump_flag_EX_MEM" type="logic">
+      <obj_property name="ElementShortName">jump_flag_EX_MEM</obj_property>
+      <obj_property name="ObjectShortName">jump_flag_EX_MEM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/flushing_unit_output" type="logic">
+      <obj_property name="ElementShortName">flushing_unit_output</obj_property>
+      <obj_property name="ObjectShortName">flushing_unit_output</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/byte_address" type="array">
+      <obj_property name="ElementShortName">byte_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_address[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/input_data" type="array">
+      <obj_property name="ElementShortName">input_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/output_data" type="array">
+      <obj_property name="ElementShortName">output_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_data[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_3/debug_RAM_top1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_2/debug_RAM_top1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_1/debug_RAM_top1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_0/debug_RAM_top1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_top1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_3/debug_RAM_bottom1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_2/debug_RAM_bottom1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_1/debug_RAM_bottom1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/datamem_module_0/datamem_0/debug_RAM_bottom1024" type="array">
+      <obj_property name="ElementShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_RAM_bottom1024[1023:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x0_to_muxes" type="array">
+      <obj_property name="ElementShortName">x0_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x0_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x1_to_muxes" type="array">
+      <obj_property name="ElementShortName">x1_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x1_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x2_to_muxes" type="array">
+      <obj_property name="ElementShortName">x2_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x2_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x3_to_muxes" type="array">
+      <obj_property name="ElementShortName">x3_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x3_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x4_to_muxes" type="array">
+      <obj_property name="ElementShortName">x4_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x4_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x5_to_muxes" type="array">
+      <obj_property name="ElementShortName">x5_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x5_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x6_to_muxes" type="array">
+      <obj_property name="ElementShortName">x6_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x6_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x7_to_muxes" type="array">
+      <obj_property name="ElementShortName">x7_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x7_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x8_to_muxes" type="array">
+      <obj_property name="ElementShortName">x8_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x8_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x9_to_muxes" type="array">
+      <obj_property name="ElementShortName">x9_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x9_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x10_to_muxes" type="array">
+      <obj_property name="ElementShortName">x10_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x10_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x11_to_muxes" type="array">
+      <obj_property name="ElementShortName">x11_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x11_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x12_to_muxes" type="array">
+      <obj_property name="ElementShortName">x12_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x12_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x13_to_muxes" type="array">
+      <obj_property name="ElementShortName">x13_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x13_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x14_to_muxes" type="array">
+      <obj_property name="ElementShortName">x14_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x14_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x15_to_muxes" type="array">
+      <obj_property name="ElementShortName">x15_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x15_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x16_to_muxes" type="array">
+      <obj_property name="ElementShortName">x16_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x16_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x17_to_muxes" type="array">
+      <obj_property name="ElementShortName">x17_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x17_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x18_to_muxes" type="array">
+      <obj_property name="ElementShortName">x18_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x18_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x19_to_muxes" type="array">
+      <obj_property name="ElementShortName">x19_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x19_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x20_to_muxes" type="array">
+      <obj_property name="ElementShortName">x20_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x20_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x21_to_muxes" type="array">
+      <obj_property name="ElementShortName">x21_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x21_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x22_to_muxes" type="array">
+      <obj_property name="ElementShortName">x22_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x22_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x23_to_muxes" type="array">
+      <obj_property name="ElementShortName">x23_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x23_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x24_to_muxes" type="array">
+      <obj_property name="ElementShortName">x24_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x24_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x25_to_muxes" type="array">
+      <obj_property name="ElementShortName">x25_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x25_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x26_to_muxes" type="array">
+      <obj_property name="ElementShortName">x26_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x26_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x27_to_muxes" type="array">
+      <obj_property name="ElementShortName">x27_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x27_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x28_to_muxes" type="array">
+      <obj_property name="ElementShortName">x28_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x28_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x29_to_muxes" type="array">
+      <obj_property name="ElementShortName">x29_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x29_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x30_to_muxes" type="array">
+      <obj_property name="ElementShortName">x30_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x30_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datapath_0/register_file_0/x31_to_muxes" type="array">
+      <obj_property name="ElementShortName">x31_to_muxes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x31_to_muxes[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_regfile_x31_output" type="array">
+      <obj_property name="ElementShortName">debug_regfile_x31_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_regfile_x31_output[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_regfile_x1_output" type="array">
+      <obj_property name="ElementShortName">debug_regfile_x1_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_regfile_x1_output[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_regfile_x2_output" type="array">
+      <obj_property name="ElementShortName">debug_regfile_x2_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_regfile_x2_output[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_output" type="array">
+      <obj_property name="ElementShortName">debug_ALU_output[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_output[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_regfile_write" type="logic">
+      <obj_property name="ElementShortName">debug_regfile_write</obj_property>
+      <obj_property name="ObjectShortName">debug_regfile_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_input_0" type="array">
+      <obj_property name="ElementShortName">debug_ALU_input_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_input_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_input_1" type="array">
+      <obj_property name="ElementShortName">debug_ALU_input_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_input_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_read_address_0" type="array">
+      <obj_property name="ElementShortName">debug_reg_file_read_address_0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_read_address_0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_read_address_1" type="array">
+      <obj_property name="ElementShortName">debug_reg_file_read_address_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_read_address_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_mux0_sel" type="array">
+      <obj_property name="ElementShortName">debug_mux0_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_mux0_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_operation" type="array">
+      <obj_property name="ElementShortName">debug_ALU_operation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_operation[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_forward_mux_0" type="array">
+      <obj_property name="ElementShortName">debug_forward_mux_0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_forward_mux_0[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_forward_mux_1" type="array">
+      <obj_property name="ElementShortName">debug_forward_mux_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_forward_mux_1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_read_address_0_ID_EXE" type="array">
+      <obj_property name="ElementShortName">debug_reg_file_read_address_0_ID_EXE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_read_address_0_ID_EXE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_write_address_EX_MEM" type="array">
+      <obj_property name="ElementShortName">debug_reg_file_write_address_EX_MEM[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_write_address_EX_MEM[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_mux0_sel_MEM_WB" type="array">
+      <obj_property name="ElementShortName">debug_mux0_sel_MEM_WB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_mux0_sel_MEM_WB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_write_MEM_WB" type="logic">
+      <obj_property name="ElementShortName">debug_reg_file_write_MEM_WB</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_write_MEM_WB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_reg_file_write_address_MEM_WB" type="array">
+      <obj_property name="ElementShortName">debug_reg_file_write_address_MEM_WB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_reg_file_write_address_MEM_WB[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_output_MEM_WB" type="array">
+      <obj_property name="ElementShortName">debug_ALU_output_MEM_WB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_output_MEM_WB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_ALU_output_EX_MEM" type="array">
+      <obj_property name="ElementShortName">debug_ALU_output_EX_MEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_ALU_output_EX_MEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_register_file_output_0" type="array">
+      <obj_property name="ElementShortName">debug_register_file_output_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_register_file_output_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_register_file_output_1" type="array">
+      <obj_property name="ElementShortName">debug_register_file_output_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_register_file_output_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_register_file_output_0_ID_EX" type="array">
+      <obj_property name="ElementShortName">debug_register_file_output_0_ID_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_register_file_output_0_ID_EX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/debug_register_file_output_1_ID_EX" type="array">
+      <obj_property name="ElementShortName">debug_register_file_output_1_ID_EX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">debug_register_file_output_1_ID_EX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/IF_ID_flush" type="logic">
+      <obj_property name="ElementShortName">IF_ID_flush</obj_property>
+      <obj_property name="ObjectShortName">IF_ID_flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/reg_file_read_address_0" type="array">
+      <obj_property name="ElementShortName">reg_file_read_address_0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file_read_address_0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/reg_file_read_address_1" type="array">
+      <obj_property name="ElementShortName">reg_file_read_address_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file_read_address_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/reg_file_write" type="logic">
+      <obj_property name="ElementShortName">reg_file_write</obj_property>
+      <obj_property name="ObjectShortName">reg_file_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/reg_file_write_address" type="array">
+      <obj_property name="ElementShortName">reg_file_write_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_file_write_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/immediate" type="array">
+      <obj_property name="ElementShortName">immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/ALU_operation" type="array">
+      <obj_property name="ElementShortName">ALU_operation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_operation[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/ALU_branch" type="logic">
+      <obj_property name="ElementShortName">ALU_branch</obj_property>
+      <obj_property name="ObjectShortName">ALU_branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/JTU_mux_sel" type="logic">
+      <obj_property name="ElementShortName">JTU_mux_sel</obj_property>
+      <obj_property name="ObjectShortName">JTU_mux_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/data_format" type="array">
+      <obj_property name="ElementShortName">data_format[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_format[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/datamem_write" type="logic">
+      <obj_property name="ElementShortName">datamem_write</obj_property>
+      <obj_property name="ObjectShortName">datamem_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/mux0_sel" type="array">
+      <obj_property name="ElementShortName">mux0_sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mux0_sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/mux1_sel" type="logic">
+      <obj_property name="ElementShortName">mux1_sel</obj_property>
+      <obj_property name="ObjectShortName">mux1_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/microcontroller/instruction" type="array">
+      <obj_property name="ElementShortName">instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction[31:0]</obj_property>
+   </wvobject>
+</wave_config>
